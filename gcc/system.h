@@ -494,7 +494,7 @@ extern char *getwd (char *);
 #endif
 
 #if defined (HAVE_DECL_SBRK) && !HAVE_DECL_SBRK
-extern void *sbrk (int);
+extern void *sbrk (ptrdiff_t);
 #endif
 
 #if defined (HAVE_DECL_SETENV) && !HAVE_DECL_SETENV
@@ -550,7 +550,7 @@ extern "C" {
 #if !defined (HAVE_STRSIGNAL) \
     || (defined (HAVE_DECL_STRSIGNAL) && !HAVE_DECL_STRSIGNAL)
 # ifndef strsignal
-extern const char *strsignal (int);
+extern char *strsignal (int);
 # endif
 #endif
 

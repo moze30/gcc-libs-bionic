@@ -78,8 +78,8 @@ along with GCC; see the file COPYING3.  If not see
    When the -shared link option is used a final link is not being
    done.  */
 
-#define GLIBC_DYNAMIC_LINKER32 "/lib/ld-linux.so.2"
-#define GLIBC_DYNAMIC_LINKER64 "/lib64/ld-linux.so.2"
+#define GLIBC_DYNAMIC_LINKER32 "/data/data/com.winfusion/files/rootfs/usr/lib/ld-linux.so.2"
+#define GLIBC_DYNAMIC_LINKER64 "/data/data/com.winfusion/files/rootfs/usr/lib/ld-linux.so.2"
 
 #ifdef SPARC_BI_ARCH
 
